@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Ahmed Ramdhan Ahmed Sidi
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeLanguage}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ahmed Ramdhan Ahmed Sidi} \\ \vspace{1pt}
+    Nouakchott, Mauritania \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +222 42170007 ~ \href{mailto:ahmedramdhan02@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{ahmedramdhan02@gmail.com}} ~ 
+    \href{https://linkedin.com/in/ahmedramdhanas}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/ahmedramdhanas}}  ~
+    \href{https://github.com/rmdnhub}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/rmdnhub}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Diploma in Software Enginnering}{2022 -- 2024}
+      {Ecole Supérieure Polytechnique de Nouakchott}{}
+    \resumeSubheading
+      {National Engineering Competition of Mauritania}{2020 -- 2022}
+      {Preparatory Institute for Engineering Schools}{}
+    \resumeSubheading
+      {Mathematics Baccalaureate}{2017 -- 2020}
+      {Lycée d'Excellence 1}{}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Banque Populaire de Mauritania}{November 2023 -- June 2024}
+      {Fullstack Engineer Intern $|$ AWS, Docker, React.js, Django}{Apprenticeship}
+      \resumeItemListStart
+        \resumeItem{Developed an online learning platform for the bank's employees.}
+        \resumeItem{Based on the Docker Devstack distribution of Open edX and using Jira Software for task management.}
+        \resumeItem{Deployed the platform images on AWS using EC2, ECR, and ECS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Adias}{July -- August 2023}
+      {Frontend Engineer Intern $|$ Angular, JavaScript, HTML, CSS}{Internship}
+      \resumeItemListStart
+        \resumeItem{Developed the front-end of a web-based learning application inspired by Udemy.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Mail Management System} $|$ \emph{Angular, Spring Boot, PostgreSQL, GitHub}}{January -- June 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a fullstack application to manage the transmission, reading, response, and archiving of incoming and outgoing mail within a department.}
+            \resumeItem{Used Angular for the frontend, Spring Boot for the backend, and PostgreSQL as the database.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{HafedhGPT} $|$ \emph{Machine Learning, API}}{November -- December 2023}
+          \resumeItemListStart
+            \resumeItem{Created and trained a custom ChatGPT model to predict exam patterns and provide tailored responses to my professor's course materials.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{School Management System} $|$ \emph{Python, Django, Flask, GitLab, Bootstrap}}{March -- June 2023}
+          \resumeItemListStart
+            \resumeItem{Led a three-person Agile team to develop a school management application.}
+            \resumeItem{Developed one version of the application using Django and another version using Flask.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, VBA, C, C++, Java, JavaScript, TypeScript, Assembly, Prolog, PL/SQL} \\
+     \textbf{Technologies}{: Angular, React.js, Flutter, Spring Boot, Django, Flask, Bootstrap, AWS, Docker, Git, Oracle, MySQL, PostgreSQL, MongoDB, Spark, Kafka, TensorFlow, Keras, Linux} \\
+     \textbf{Development Tools}{: Visual Studio, Android Studio, IntelliJ, Eclipse, Jira Software, GitHub, GitLab, Postman} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+  \begin{itemize}[left=0in, label={}, itemsep=0.2em, parsep=0pt, topsep=0pt]
+    \resumeLanguage{Arabic}{Native}
+    \resumeLanguage{French}{DALF C2}
+    \resumeLanguage{English}{TOEIC Listening B2 \& Reading B2}
+  \end{itemize}
+
+%-----------LEADERSHIP / EXTRACURRICULAR-----------
+\section{Activities}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Huawei, Seeds for the Future} $|$ \emph{Entrepreneurship, Artificial Intelligence, Teamwork}}{September 2023}
+          \resumeItemListStart
+            \resumeItem{Participated in the "Seeds for the Future" program in Casablanca, Morocco, organized by Huawei to enhance young talents' skills in new technologies. With a team of Moroccan talents, we presented our idea for an application using artificial intelligence to reduce children's screen addiction. My team, GenZai, won first place in North Africa.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+        \resumeProjectHeading
+          {\textbf{Mathematics Olympiad at the Baccalaureate Level}}{August 2020}
+          \resumeItemListStart
+            \resumeItem{Achieved fourth place, demonstrating expertise in problem-solving.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\end{document}
